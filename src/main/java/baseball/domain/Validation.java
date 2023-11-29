@@ -20,7 +20,7 @@ public class Validation {
     }
 
     public static void restartNumValidation(String num) {
-        if (!(num == "1" || num == "2")) {
+        if (!(num.equals("1") || num.equals("2"))) {
             throw new IllegalArgumentException("[ERROR] 1또는 2를 입력 하세요.");
         }
     }

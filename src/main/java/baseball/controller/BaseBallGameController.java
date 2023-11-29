@@ -30,7 +30,7 @@ public class BaseBallGameController {
 
     public static void oneGame(){
         computerNumber = Computer.computerNumber();
-        System.out.println(computerNumber);
+//        System.out.println(computerNumber);
         do{
             String inputNum = inputNumber();
             playerNumber = Player.playerNumber(inputNum);

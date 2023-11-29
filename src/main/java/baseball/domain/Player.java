@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Player {
 
-    public static List<Integer> playerNumber(String num){
+    public static List<Integer> playerNumber(String num) {
         List<Integer> playerNum = new ArrayList<>();
         for (String s : num.split("")) {
             playerNum.add(Integer.parseInt(s));
@@ -18,7 +18,7 @@ public class Player {
         return playerNum;
     }
 
-    public static boolean restartOrEnd(String num){
+    public static boolean restartOrEnd(String num) {
         restartNumValidation(num);
         if (num == "1") {
             return true;

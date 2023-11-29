@@ -4,13 +4,17 @@ import java.util.List;
 
 public class Validation {
 
-    public static void countValidation(List<Integer> playerNum){
+    public static void playerValidation(List<Integer> playerNum) {
+        countValidation(playerNum);
+        duplicateValidation(playerNum);
+    }
+    private static void countValidation(List<Integer> playerNum){
         if (playerNum.size() != 3){
             System.out.println("[ERROR] 3개의 숫자를 입력하세요.");
             throw new IllegalArgumentException();
         }
     }
-    public static void duplicateValidation(List<Integer> playerNum){
+    private static void duplicateValidation(List<Integer> playerNum){
         if (playerNum.size() != playerNum.stream().distinct().count()){
             System.out.println("[ERROR] 중복된 요소가 있습니다.");
             throw new IllegalArgumentException();

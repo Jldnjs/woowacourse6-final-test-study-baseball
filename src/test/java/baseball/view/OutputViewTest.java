@@ -15,5 +15,4 @@ class OutputViewTest {
         String actual = printResult(ball,strike);
         assertThat(actual).isEqualTo(expected);
     }
-
 }

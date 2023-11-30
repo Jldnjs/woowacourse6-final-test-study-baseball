@@ -13,6 +13,7 @@ public class BaseballGame {
         return matchList.size();
     }
 
+    
     public static Integer strike(List<Integer> comNum, List<Integer> playerNum){
         int count = 0;
         for (int i = 0; i < comNum.size(); i++) {

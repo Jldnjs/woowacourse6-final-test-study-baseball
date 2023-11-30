@@ -13,7 +13,6 @@ import baseball.domain.Computer;
 import baseball.domain.Player;
 import java.util.ArrayList;
 import java.util.List;
-
 public class BaseBallGameController {
 
     public static List<Integer> computerNumber = new ArrayList<>();

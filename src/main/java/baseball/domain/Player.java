@@ -17,6 +17,7 @@ public class Player {
         return playerNum;
     }
 
+    
     public static boolean restartOrEnd(String num) {
         restartNumValidation(num);
         if (num.equals("1")) {
